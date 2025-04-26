@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplyRecipes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .hero{
+            min-height: 100vh;
+            background: url(food_back.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .logo{
+            color: #e78f38;
+            font-size: 30px;
+            font-weight: bolder;
+            transition: .3s;
+        }
+
+        .logo:hover{
+            transform: translateX(20px);
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li{
+            margin: 0 20px;
+        }
+
+        nav ul li a{
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover{
+            color: #e78f38;
+            border-bottom:2px solid #e78f38 ;
+        }
+
+        nav button{
+            background: #e78f38;
+            border: none;
+            color: #1E1D22;
+            padding: 12px 35px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 2rem;
+            transition: .3s;
+        
+        }
+        
+        
+        nav button:hover{
+            scale: .8;
+        }
+
+        .content{
+            position: absolute;
+            top:35%;
+            left: 55px;
+        }
+
+        h2{
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p{
+            font-size: 11px;
+            margin-top: 80px;
+            color: #eee;
+        }
+
+        .content button{
+            margin-top: 50px;
+            background: #e78f38;
+            border:2px solid #e78f38;
+            color: #1E1D22;
+            padding: 12px 45px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius:2rem;
+            transition: .3s;
+            
+        }
+
+        .content button:hover{
+            scale: .8;
+        }
+        .content button.know_more{
+            background: transparent;
+            border: 2px solid #e78f38;
+            color: #e78f38;
+            margin-left: 30px;
+        }
+
+        .content button.know_more:hover{
+            background: #e78f38;
+            color: #eee;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <a href="#" class="logo">SimplyRecipes</a>
+    
+                <ul>
+                    <li><a href="index.html">בית</a></li>
+                    <li><a href="contact_us.html">צור קשר </a></li>
+                    <li><a href="#">העלאת מתכונים</a></li>
+                </ul>
+                <button onclick="window.location.href='login.html'">יאאלה תכבדו באיזה LOGIN</button>
+            </nav>
+    
+            <div class="content">
+                <h2> איך להכין אוכל כמו המסעדות <br>  בבית ב...................Simply</h2>
+                
+    
+                <button>חפש מתכונים </button>
+                <button class="know_more">קצת על האתר </button>
+            </div>
+        </div>
+    </body>
+    </html>
