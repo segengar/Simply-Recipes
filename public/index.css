@@ -1,0 +1,136 @@
+/* Removed <style> tag */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .hero{
+            min-height: 100vh;
+            background: url(food_back.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            padding: 10px 0;
+        }
+
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li{
+            margin: 0 15px;
+        }
+
+        nav ul li a{
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover{
+            color: #ffae42;
+            border-bottom: 2px solid #ffae42;
+        }
+
+        nav button{
+            background: #e78f38;
+            border: none;
+            color: #1E1D22;
+            padding: 10px 30px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 2rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        
+        
+        nav button:hover{
+            transform: scale(0.9);
+            background-color: #d9771a;
+        }
+
+        .content{
+            position: absolute;
+            top:35%;
+            left: 55px;
+        }
+
+        h2{
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        p{
+            font-size: 11px;
+            margin-top: 80px;
+            color: #eee;
+        }
+
+        .content button{
+            margin-top: 50px;
+            background: #e78f38;
+            border:2px solid #e78f38;
+            color: #1E1D22;
+            padding: 12px 45px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius:2rem;
+            transition: .3s;
+            
+        }
+
+        .content button:hover{
+            scale: .8;
+        }
+        .content button.know_more{
+            background: transparent;
+            border: 2px solid #e78f38;
+            color: #e78f38;
+            margin-left: 30px;
+        }
+
+        .content button.know_more:hover{
+            background: #e78f38;
+            color: #eee;
+        }
+        .content button.know_more:hover{
+            scale: .8;
+        }
+        .content button.know_more:hover{
+            background: #e78f38;
+            color: #eee;
+        }
+
+        .logo {
+            color: #e78f38;
+            font-size: 30px;
+            font-weight: bolder;
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            transform: translateX(20px);
+        }

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url(food_back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.logo {
+    color: #e78f38;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: translateX(20px);
+}
+
+.about_container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.about_container h1 {
+    font-size: 36px;
+    color: #e78f38;
+    margin-bottom: 20px;
+}
+
+.about_container p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about_container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .about_container h1 {
+        font-size: 28px;
+    }
+
+    .about_container p {
+        font-size: 16px;
+    }
+}
