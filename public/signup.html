@@ -14,22 +14,19 @@
     </header>
     <div class="hero">
         <div class="signup_container">
-            <form action="#">
+            <form id="signupForm" method="post" action="/signupForm">
                 <h1>הרשמה</h1>
                 <div class="input_box">
-                    <input type="text" placeholder="שם מלא" required>
+                    <input type="text" name="username" placeholder="שם משתמש" required>
+                    <label for="username">username</label>
                 </div>
                 <div class="input_box">
-                    <input type="text" placeholder="שם משתמש" required>
+                    <input type="email" name="email" placeholder="אימייל" required>
+                    <label for="email">email</label>
                 </div>
                 <div class="input_box">
-                    <input type="email" placeholder="אימייל" required>
-                </div>
-                <div class="input_box">
-                    <input type="password" placeholder="סיסמה" required>
-                </div>
-                <div class="input_box">
-                    <input type="password" placeholder="אימות סיסמה" required>
+                    <input type="password" name="password" placeholder="סיסמה" required>
+                    <label for="password">password</label>
                 </div>
                 <button type="submit">הרשמה</button>
                 <div class="login_redirect">
@@ -40,6 +37,23 @@
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            try {
+                const response = await fetch('/signupForm', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data),
+                });
+                const result = await response.json();
+                alert(result.message || 'Registration successful');
+            } catch (error) {
+                alert('Error registering user');
+            }
+        });
+    </script>
 </body>
 </html>
